@@ -37,30 +37,29 @@ header {
     padding: 10px 34px;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Altera para criar espaço entre o título e as divs */
+    justify-content: space-between;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .caixa-pesquisa,
 .btn-perfil {
-    margin-left: auto; /* Adiciona margem esquerda automática para empurrar as divs para a direita */
+    margin-left: auto;
 }
 
 /* Estilo das imagens no cabeçalho */
 header img {
     height: 40px; 
-    margin-left: 10px; /* Espaço entre as imagens */
-    margin-right: 10px; /* Espaço à direita da última imagem */
-
+    margin-left: 10px; 
+    margin-right: 10px;
 }
 
 .lupabranca{
     width: 20px;
     height: 20px;
-    position: absolute; /* Permite posicionamento sobre a caixa de pesquisa */
+    position: absolute; 
     right: 48px;
-    transform: translateY(-50%); /* Ajusta para o centro vertical */
-    z-index: 1; /* Coloca a lupa branca acima dos outros elementos */
+    transform: translateY(-50%);
+    z-index: 1;
 }
 
 /* Estilos da caixa de pesquisa */
@@ -79,7 +78,6 @@ header img {
     justify-content: space-between;
     cursor: pointer;
     transition: width 0.4s; /* Transição suave na largura */
-
 }
 
 /* Estilos do campo de texto */
@@ -96,7 +94,6 @@ header img {
     font-weight: bold;
     opacity: 0;
     width: 380px;
-
 }
 
 /* Estilos do placeholder */
@@ -114,7 +111,7 @@ header img {
 /* Estilos para mostrar o campo de texto */
 .caixa-pesquisa:hover .texto-pesquisa, 
 .caixa-pesquisa:focus-within .texto-pesquisa {
-    opacity: 1; /* Torna visível quando a caixa é expandida */
+    opacity: 1;
 }
 
 /* Estilos do botão dentro da caixa de pesquisa */
@@ -135,7 +132,6 @@ header img {
     right: 48px;
     width: 20px;
 }
-
 
 .icon-perfil a {
     right: 48px;
@@ -183,12 +179,11 @@ nav a {
     font-weight: bold; 
     font-size: 25px;
     transition: box-shadow 0.3s ease;
-
 }
 
 /* Efeito ao passar o mouse sobre os links */
 nav a:hover {
-    text-decoration: none; /* Efeito sublinhado ao passar o mouse */
+    text-decoration: none; 
     color: #2e185a;
     font-size: 27px;
 }
@@ -199,30 +194,28 @@ section video {
     height: 100%;
 }
 
-
 /* Seção de destaque */
 .hero-section {
-    background-color: #fff; /* Cor de fundo da seção */
-    padding: 20px; /* Preenchimento da seção */
+    background-color: #fff;
+    padding: 20px;
     text-align: center; 
     margin: 20px; 
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra da seção */
-    border-radius: 10px; /* Bordas arredondadas */
-}
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
 
 /* Estilo das imagens na seção de destaque */
 .hero-section img {
     max-width: 100%; 
     height: auto;
-    border-radius: 10px; /* Bordas arredondadas */
+    border-radius: 10px; 
 }
 
 .artigos {
-    background-color: #fff; /* Cor de fundo da seção */
+    background-color: #fff;
     padding: 15px; 
     margin: 20px; 
     border-radius: 10px;
-    display: flex; /* Exibir como flexível */
+    display: flex; 
     align-items: center; 
 }
 
@@ -231,7 +224,7 @@ section video {
     width: 220px; 
     height: auto; 
     margin-right: 20px; 
-    border-radius: 10px; /* Bordas arredondadas */
+    border-radius: 10px; 
 }
 
 .icon-calendario {
@@ -252,13 +245,13 @@ section video {
 
 /* Rodapé */
 footer {
-    background-color: #ffdb38; /* Cor de fundo do rodapé */
+    background-color: #ffdb38; 
     padding: 5px 5px; 
     text-align: center; 
     color: #4C2F87; 
     font-weight: bold; 
     font-size: 14px; 
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra do rodapé */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Botão "criar fórum*/
@@ -299,31 +292,31 @@ section img{
 
 .foruns-env {
     display: flex;
-    justify-content: center;   /* Centraliza o container horizontalmente */
-    align-items: center;       /* Centraliza verticalmente */
-    padding: 70px;             /* Espaço interno */
-    box-sizing: border-box;     /* Inclui padding no tamanho do container */
+    justify-content: center;   
+    align-items: center;       
+    padding: 70px;             
+    box-sizing: border-box;     
     font-weight: bold; 
-  }
+}
   
   .topicos {
     display: flex;
-    flex-direction: column;    /* Organiza os links em coluna */
-    width: 100%;               /* Largura total do container */
-    gap: 18px;                 /* Espaçamento entre os itens */
-  }
+    flex-direction: column;   
+    width: 100%;               
+    gap: 18px;                 
+}
 
 .topicos a {
     display: block;
-    font-size: 16px;           /* Tamanho do texto */
-    color: #38167b;          /* Cor do texto */
-    text-align: left;          /* Alinha o texto à esquerda */
-    text-decoration: none;     /* Remove o sublinhado */
-    padding: 15px;             /* Espaço interno para o conteúdo do link */
-    background-color: #c6b5e6;   /* Fundo para cada link */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
-    border-radius: 8px;        /* Bordas arredondadas para cada bloco */
-    transition: background-color 0.8s; /* Efeito ao passar o mouse */
+    font-size: 16px;        
+    color: #38167b;         
+    text-align: left;         
+    text-decoration: none;  
+    padding: 15px;          
+    background-color: #c6b5e6;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;       
+    transition: background-color 0.8s;
 }
 
 .topicos a:hover{
