@@ -1,0 +1,337 @@
+@font-face {
+    font-family: 'Sifonn';
+    src: url('SiffonPro.otf') format('opentype');
+}
+
+/* Estilo do título */
+h1 {
+    display: flex;
+    font-family: 'Sifonn';
+    margin: 0;
+    color: #5b4686;
+    font-size: 40px;
+    letter-spacing: -3px;
+}
+
+.logo{
+    text-decoration: none; 
+}
+
+.logo:hover{
+    color: #2e185a;
+    transition: 0.5s;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial;
+    margin: 0; 
+    padding: 0; 
+    background-color: #fff5ec; 
+    color: #5b4686; 
+}
+
+/* Cabeçalho */
+header {
+    background-color: #fff5ec;
+    padding: 10px 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Altera para criar espaço entre o título e as divs */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.caixa-pesquisa,
+.btn-perfil {
+    margin-left: auto; /* Adiciona margem esquerda automática para empurrar as divs para a direita */
+}
+
+/* Estilo das imagens no cabeçalho */
+header img {
+    height: 40px; 
+    margin-left: 10px; /* Espaço entre as imagens */
+    margin-right: 10px; /* Espaço à direita da última imagem */
+
+}
+
+.lupabranca{
+    width: 20px;
+    height: 20px;
+    position: absolute; /* Permite posicionamento sobre a caixa de pesquisa */
+    right: 48px;
+    transform: translateY(-50%); /* Ajusta para o centro vertical */
+    z-index: 1; /* Coloca a lupa branca acima dos outros elementos */
+}
+
+/* Estilos da caixa de pesquisa */
+.caixa-pesquisa {
+    background: #5b4686;
+    height: 2px;
+    width: 2px;
+    padding: 20px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: width 0.4s; /* Transição suave na largura */
+
+}
+
+/* Estilos do campo de texto */
+.texto-pesquisa {
+    display: flex;
+    background: #ffffff1f;
+    border-radius: 40px;
+    padding: 5px 5px 5px 5px;
+    margin-right: 20px;
+    border: none; 
+    outline: 0; 
+    font-size: 10px;
+    color: #5b4686;
+    font-weight: bold;
+    opacity: 0;
+    width: 380px;
+
+}
+
+/* Estilos do placeholder */
+.texto-pesquisa::placeholder {
+    color: #ccc;
+    opacity: 1;
+}
+
+/* Expansão da caixa de pesquisa */
+.caixa-pesquisa:hover,
+.caixa-pesquisa:focus-within { 
+    width: 420px; 
+}
+
+/* Estilos para mostrar o campo de texto */
+.caixa-pesquisa:hover .texto-pesquisa, 
+.caixa-pesquisa:focus-within .texto-pesquisa {
+    opacity: 1; /* Torna visível quando a caixa é expandida */
+}
+
+/* Estilos do botão dentro da caixa de pesquisa */
+.caixa-pesquisa-btn {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Estilos do link dentro da caixa de pesquisa */
+.caixa-pesquisa a {
+    position: absolute;
+    align-items: baseline;
+    right: 48px;
+    width: 20px;
+}
+
+
+.icon-perfil a {
+    right: 48px;
+    width: 20px;
+    padding: auto;
+    margin: 5px;
+}
+
+.faixa-amarela{
+    background-color: #ffdb38;
+    padding: 0px 150px 0px 28px;
+    display: flex;
+    text-align: center;
+    color: #4C2F87;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.animaisnomenu {
+    padding-top: 80;
+    display: flex;
+    width: 250px; 
+    height: 100%;
+    flex-wrap: wrap;
+    object-fit: cover;
+}
+
+/* Navegação */
+nav {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    align-content: stretch;
+    justify-content: flex-end;
+    flex-direction: row;
+    border-radius: 10px;
+    transition: text-shadow 0.3s ease;
+}
+
+/* Estilo dos links de navegação */
+nav a {
+    margin: 0 20px; 
+    text-decoration: none; 
+    color: #4C2F87; 
+    font-weight: bold; 
+    font-size: 25px;
+    transition: box-shadow 0.3s ease;
+
+}
+
+/* Efeito ao passar o mouse sobre os links */
+nav a:hover {
+    text-decoration: none; /* Efeito sublinhado ao passar o mouse */
+    color: #2e185a;
+    font-size: 27px;
+}
+
+/*Estilo do vídeo de home*/
+section video {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Seção de destaque */
+.hero-section {
+    background-color: #fff; /* Cor de fundo da seção */
+    padding: 20px; /* Preenchimento da seção */
+    text-align: center; 
+    margin: 20px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra da seção */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estilo das imagens na seção de destaque */
+.hero-section img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.artigos {
+    background-color: #fff; /* Cor de fundo da seção */
+    padding: 15px; 
+    margin: 20px; 
+    border-radius: 10px;
+    display: flex; /* Exibir como flexível */
+    align-items: center; 
+}
+
+/* Estilo das imagens dos artigos */
+.noticia {
+    width: 220px; 
+    height: auto; 
+    margin-right: 20px; 
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.icon-calendario {
+    width: 22px; 
+}
+
+/* Estilo dos parágrafos nas informações dos artigos */
+.infos-artigos p {
+    margin: 5px 0; 
+    font-size: 16px; 
+}
+
+/* Primeiro parágrafo com outo estilo */
+.content-section .infos-artigos p:first-child {
+    font-weight: bold; 
+    color: #4C2F87; 
+}
+
+/* Rodapé */
+footer {
+    background-color: #ffdb38; /* Cor de fundo do rodapé */
+    padding: 5px 5px; 
+    text-align: center; 
+    color: #4C2F87; 
+    font-weight: bold; 
+    font-size: 14px; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra do rodapé */
+}
+
+/* Botão "criar fórum*/
+.botão{
+    padding: 10px 8px; 
+    width: 200px;
+    color: #fff;
+    background: #6732d2;
+    border: 1px solid #555;
+    border-radius: 8px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.botão:hover{
+    background: #38167b;
+}
+
+/*article*/
+article{
+    padding: 20px 100px 20px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    border-color: #ddd;
+}
+
+/*Img página 1 - fórum*/
+section img{
+    width: 100%;
+    height: 100%;
+}
+
+.foruns-env {
+    display: flex;
+    justify-content: center;   /* Centraliza o container horizontalmente */
+    align-items: center;       /* Centraliza verticalmente */
+    padding: 70px;             /* Espaço interno */
+    box-sizing: border-box;     /* Inclui padding no tamanho do container */
+    font-weight: bold; 
+  }
+  
+  .topicos {
+    display: flex;
+    flex-direction: column;    /* Organiza os links em coluna */
+    width: 100%;               /* Largura total do container */
+    gap: 18px;                 /* Espaçamento entre os itens */
+  }
+
+.topicos a {
+    display: block;
+    font-size: 16px;           /* Tamanho do texto */
+    color: #38167b;          /* Cor do texto */
+    text-align: left;          /* Alinha o texto à esquerda */
+    text-decoration: none;     /* Remove o sublinhado */
+    padding: 15px;             /* Espaço interno para o conteúdo do link */
+    background-color: #c6b5e6;   /* Fundo para cada link */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    border-radius: 8px;        /* Bordas arredondadas para cada bloco */
+    transition: background-color 0.8s; /* Efeito ao passar o mouse */
+}
+
+.topicos a:hover{
+    display: flex;
+    color: #fff;
+    display: flex;
+    height: 35px;
+    align-items: center;
+    font-size: 20px;
+    background-color:#5d4d7d
+}
