@@ -1,0 +1,316 @@
+@font-face {
+    font-family: 'Sifonn';
+    src: url('SiffonPro.otf') format('opentype');
+}
+
+/* Estilo do título */
+h1 {
+    display: flex;
+    font-family: 'Sifonn';
+    margin: 0;
+    color: #5b4686;
+    font-size: 40px;
+    letter-spacing: -3px;
+}
+
+.logo{
+    text-decoration: none; 
+    color: #5b4686;
+
+}
+
+.logo:hover{
+    color: #2e185a;
+    transition: 0.5s;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial;
+    margin: 0; 
+    padding: 0; 
+    background-color: #fff5ec; 
+    color: #5b4686; 
+}
+
+/* Cabeçalho */
+header {
+    background-color: #fff5ec;
+    padding: 10px 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.caixa-pesquisa,
+.btn-perfil {
+    margin-left: auto;
+}
+
+/* Estilo das imagens no cabeçalho */
+header img {
+    height: 40px; 
+    margin-left: 10px; 
+    margin-right: 10px; 
+
+}
+
+.lupabranca{
+    width: 20px;
+    height: 20px;
+    position: absolute; 
+    right: 48px;
+    transform: translateY(-50%);
+    z-index: 1; 
+}
+
+/* Estilos da caixa de pesquisa */
+.caixa-pesquisa {
+    background: #5b4686;
+    height: 2px;
+    width: 2px;
+    padding: 20px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: width 0.4s;
+
+}
+
+/* Estilos do campo de texto */
+.texto-pesquisa {
+    display: flex;
+    background: #ffffff1f;
+    border-radius: 40px;
+    padding: 5px 5px 5px 5px;
+    margin-right: 20px;
+    border: none; 
+    outline: 0; 
+    font-size: 10px;
+    color: #5b4686;
+    font-weight: bold;
+    opacity: 0;
+    width: 380px;
+
+}
+
+/* Estilos do placeholder */
+.texto-pesquisa::placeholder {
+    color: #ccc;
+    opacity: 1;
+}
+
+/* Expansão da caixa de pesquisa */
+.caixa-pesquisa:hover,
+.caixa-pesquisa:focus-within { 
+    width: 420px; 
+}
+
+/* Estilos para mostrar o campo de texto */
+.caixa-pesquisa:hover .texto-pesquisa, 
+.caixa-pesquisa:focus-within .texto-pesquisa {
+    opacity: 1; 
+}
+
+/* Estilos do botão dentro da caixa de pesquisa */
+.caixa-pesquisa-btn {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Estilos do link dentro da caixa de pesquisa */
+.caixa-pesquisa a {
+    position: absolute;
+    align-items: baseline;
+    right: 48px;
+    width: 20px;
+}
+
+
+.icon-perfil a {
+    right: 48px;
+    width: 20px;
+    padding: auto;
+    margin: 5px;
+}
+
+.faixa-amarela{
+    background-color: #ffc95d;
+    padding: 0px 150px 0px 28px;
+    display: flex;
+    text-align: center;
+    color: #4C2F87;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.animaisnomenu {
+    padding-top: 80;
+    display: flex;
+    width: 250px; 
+    height: 100%;
+    flex-wrap: wrap;
+    object-fit: cover;
+}
+
+/* Navegação */
+nav {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    align-content: stretch;
+    justify-content: flex-end;
+    flex-direction: row;
+    border-radius: 10px;
+    transition: text-shadow 0.3s ease;
+}
+
+/* Estilo dos links de navegação */
+nav a {
+    margin: 0 20px; 
+    text-decoration: none; 
+    color: #4C2F87; 
+    font-weight: bold; 
+    font-size: 25px;
+    transition: box-shadow 0.3s ease;
+
+}
+
+/* Efeito ao passar o mouse sobre os links */
+nav a:hover {
+    text-decoration: none;
+    color: #2e185a;
+    font-size: 27px;
+}
+
+@media (max-width: 768px) { 
+    .faixa-amarela {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    nav {
+        flex-direction: column;
+        align-items:center;
+    }
+    
+    nav a {
+        margin: 10px 0; 
+    }
+}
+
+.introdução{
+    background-color: #fff5ec;
+    padding: 10px 34px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+}
+
+/*Img página 1 - fórum*/
+section img{
+    width: 100%;
+    height: 100%;
+}
+
+article {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+article2 {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+select {
+    padding: 10px 15px;
+    width: 80%;
+    color: #fff;
+    font-weight: bold;
+    background: #4C2F87;
+    border: 2px solid #4C2F87;
+    border-radius: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    appearance: none; /* Remove seta padrão para personalização */
+    position: relative;
+}
+
+select:hover, select:focus {
+    border-color: #6A5ACD;
+    background-color: #3A1E65;
+    
+}
+
+/* Adiciona uma sombra e ajusta o estilo da lista suspensa */
+select option {
+    color: #4C2F87;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+/* Placeholder estilizado */
+select option[value=""] {
+    color: #6A5ACD;
+}
+
+/* Para que o select pareça abrir para baixo com sombra */
+select {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajuste de responsividade */
+@media screen and (max-width: 768px) {
+    select {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    select {
+        width: 100%;
+    }
+}
+select:hover{
+    background: #3A1E65;
+}
+
+label{
+    color: #fff;
+
+}
+
+/* Rodapé */
+footer {
+    background-color: #ffdb38;
+    padding: 5px 5px; 
+    text-align: center; 
+    color: #4C2F87; 
+    font-weight: bold; 
+    font-size: 12px; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
